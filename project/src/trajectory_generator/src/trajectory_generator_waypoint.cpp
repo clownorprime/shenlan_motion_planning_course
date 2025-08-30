@@ -156,7 +156,7 @@ Eigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(
       {
         if (i >= 4 && j >= 4)
         {
-          Q(i, j) = (i * (i - 1) * (i - 2) * (i - 3)) * (j * (j - 1) * (j - 2) * (j - 3)) / (i + j - 7) / pow(t, i + j - 7);
+          Q(i, j) = (i * (i - 1) * (i - 2) * (i - 3)) * (j * (j - 1) * (j - 2) * (j - 3)) * pow(t, i + j - 7) / (i + j - 7);
         }
       }
     }
@@ -256,86 +256,6 @@ Eigen::MatrixXd TrajectoryGeneratorWaypoint::PolyQPGeneration(
       Aeq.block(start_index + i * 3, i * p_num1d, first_Aeq.rows(), first_Aeq.cols()) = first_Aeq;
       Aeq.block(start_index + i * 3, (i + 1) * p_num1d, second_Aeq.rows(), second_Aeq.cols()) = -second_Aeq;
     }
-
-    auto solveSimpleQP = [](const MatrixXd& H, const VectorXd& f, const MatrixXd &Aeq, const VectorXd& beq) -> VectorXd 
-    {
-        int n = H.rows();
-        int m = Aeq.rows();
-    
-        std::cout << "Building KKT system with n=" << n << ", m=" << m << std::endl;
-        
-        try {
-            // 1. 构建KKT系统 - 使用更安全的方法
-            Eigen::MatrixXd KKT = Eigen::MatrixXd::Zero(n + m, n + m);
-            
-            // 填充KKT矩阵 - 使用block操作避免索引错误
-            if (n > 0) {
-                KKT.block(0, 0, n, n) = H;  // H矩阵
-            }
-            
-            if (n > 0 && m > 0) {
-                KKT.block(0, n, n, m) = Aeq.transpose();  // Aeq^T
-                KKT.block(n, 0, m, n) = Aeq;              // Aeq
-            }
-            // 右下角的零矩阵已经由Zero初始化完成
-
-            // 2. 构建右侧向量 - 使用segment避免索引错误
-            Eigen::VectorXd rhs(n + m);
-            if (n > 0) {
-                rhs.segment(0, n) = -f;
-            }
-            if (m > 0) {
-                rhs.segment(n, m) = beq;
-            }
-
-            std::cout << "KKT matrix size: " << KKT.rows() << "x" << KKT.cols() << std::endl;
-            std::cout << "RHS vector size: " << rhs.rows() << std::endl;
-
-            // 3. 检查系统是否可解
-            Eigen::FullPivLU<Eigen::MatrixXd> lu(KKT);
-            if (lu.rank() < n + m) {
-                std::cout << "Warning: KKT system is rank deficient. Rank: " 
-                          << lu.rank() << "/" << n + m << std::endl;
-                
-                // 使用最小二乘解
-                Eigen::VectorXd full_solution = KKT.colPivHouseholderQr().solve(rhs);
-                
-                // 安全地提取解
-                if (full_solution.size() >= n) {
-                return full_solution.head(n);
-            } else {
-                std::cerr << "Error: Solution vector too small!" << std::endl;
-                return Eigen::VectorXd::Zero(n);
-            }
-            }
-
-            // 4. 求解系统
-            Eigen::VectorXd full_solution = lu.solve(rhs);
-            
-            // 5. 安全地提取解
-            if (full_solution.size() < n) {
-                std::cerr << "Error: Solution size " << full_solution.size() 
-                          << " < expected size " << n << std::endl;
-                return Eigen::VectorXd::Zero(n);
-            }
-            
-            Eigen::VectorXd x = full_solution.head(n);
-            
-            // 验证解的有效性
-            double constraint_violation = (m > 0) ? (Aeq * x - beq).norm() : 0.0;
-            std::cout << "Constraint violation norm: " << constraint_violation << std::endl;
-            
-            if (constraint_violation > 1e-6) {
-                std::cout << "Warning: Large constraint violation!" << std::endl;
-            }
-        
-            return x;
-        
-        } catch (const std::exception& e) {
-          std::cerr << "Exception in QP solver: " << e.what() << std::endl;
-          return Eigen::VectorXd::Zero(n);
-        }
-    };
 
     VectorXd f = VectorXd::Zero(m * p_num1d);
     VectorXd poly_coeff = generateTrajectoryPolyCoeff(Q, f, Aeq, beq);

@@ -31,7 +31,7 @@
       <param name="map/z_size"                  value="$(arg map_size_z)"/>
       <param name="replanning/thresh_replan"    value="1.5" type="double"/>
       <param name="replanning/thresh_no_replan" value="2.0" type="double"/>
-      <param name="path/resolution"             value="0.1"/>
+      <param name="path/resolution"             value="0.2"/>
 
   </node>
 

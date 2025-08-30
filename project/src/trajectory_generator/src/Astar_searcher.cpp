@@ -406,7 +406,19 @@ vector<Vector3d> AstarPathFinder::pathSimplify(const vector<Vector3d> &path,
     {
       std::cout << path[i][0] << " " << path[i][1] << " " << path[i][2] << std::endl;
     }
-    subPath = {path[0], path[path.size() - 1]};
+    subPath = {};
+    if (path.size() >= 12)
+    {
+      for (int i = 0; i < path.size() - 3; i += 8)
+      {
+        subPath.push_back(path[i]);
+      }
+      subPath.push_back(path[path.size() - 1]);
+    }
+    else
+    {
+      subPath = {path[0], path[path.size() - 1]};
+    }
   }
   return subPath;
 }

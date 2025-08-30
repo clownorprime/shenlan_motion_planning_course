@@ -246,6 +246,12 @@ bool trajGeneration() {
   _astar_path_finder->AstarGraphSearch(start_pt, target_pt);
   auto grid_path = _astar_path_finder->getPath();
 
+  std::cout << "a* path size: " << grid_path.size() << std::endl;
+  for (int i = 0; i < grid_path.size(); i++)
+  {
+    auto point = grid_path[i];
+    std::cout << "point " << i << " : " << point[0] << " " << point[1] << " " << point[2] << std::endl;
+  }
   // Reset map for next call
 
   /**
