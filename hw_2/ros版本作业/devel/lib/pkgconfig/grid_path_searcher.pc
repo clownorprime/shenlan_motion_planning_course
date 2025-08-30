@@ -1,0 +1,8 @@
+prefix=/root/shenlan/18_motion_planning/hw_2/ros版本作业/devel
+
+Name: grid_path_searcher
+Description: Description of grid_path_searcher
+Version: 0.0.1
+Cflags: -I/root/shenlan/18_motion_planning/hw_2/ros版本作业/src/grid_path_searcher/include
+Libs: -L${prefix}/lib 
+Requires: 

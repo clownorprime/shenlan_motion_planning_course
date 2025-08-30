@@ -1,0 +1,8 @@
+prefix=/root/shenlan/18_motion_planning/hw_2/ros版本作业/install
+
+Name: waypoint_generator
+Description: Description of waypoint_generator
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

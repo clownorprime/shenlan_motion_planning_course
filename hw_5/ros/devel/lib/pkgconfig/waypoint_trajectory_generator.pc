@@ -1,0 +1,8 @@
+prefix=/root/shenlan/18_motion_planning/hw_5/ros/devel
+
+Name: waypoint_trajectory_generator
+Description: Description of waypoint_trajectory_generator
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

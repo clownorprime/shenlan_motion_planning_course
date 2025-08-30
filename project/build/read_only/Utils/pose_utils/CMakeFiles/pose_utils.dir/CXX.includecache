@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/shenlan/18_motion_planning/project/src/read_only/Utils/pose_utils/include/pose_utils.h
+iostream
+-
+armadillo
+/root/shenlan/18_motion_planning/project/src/read_only/Utils/pose_utils/include/armadillo
+
+/root/shenlan/18_motion_planning/project/src/read_only/Utils/pose_utils/src/pose_utils.cpp
+pose_utils.h
+/root/shenlan/18_motion_planning/project/src/read_only/Utils/pose_utils/src/pose_utils.h
+
