@@ -367,8 +367,7 @@ void trajPublish(MatrixXd polyCoeff, VectorXd time) {
 
   unsigned int poly_number;
 
-  static int count =
-      1; // The first trajectory_id must be greater than 0. zxzxzxzx
+  static int count = 1; // The first trajectory_id must be greater than 0.
 
   quadrotor_msgs::PolynomialTrajectory traj_msg;
 

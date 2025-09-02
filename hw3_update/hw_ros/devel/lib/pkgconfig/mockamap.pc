@@ -1,0 +1,8 @@
+prefix=/root/shenlan/18_motion_planning/hw3_update/hw_ros/devel
+
+Name: mockamap
+Description: Description of mockamap
+Version: 0.1.0
+Cflags: -I/root/shenlan/18_motion_planning/hw3_update/hw_ros/src/map_gen/mockamap/include
+Libs: -L${prefix}/lib 
+Requires: roscpp pcl_ros pcl_conversions

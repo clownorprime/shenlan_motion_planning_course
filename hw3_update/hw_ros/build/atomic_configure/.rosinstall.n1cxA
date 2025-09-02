@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/shenlan/18_motion_planning/hw3_update/hw_ros/devel/setup.sh

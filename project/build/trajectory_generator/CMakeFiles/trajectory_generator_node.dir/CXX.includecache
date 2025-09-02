@@ -756,9 +756,33 @@ Eigen/Eigen
 backward.hpp
 /root/shenlan/18_motion_planning/project/src/trajectory_generator/include/backward.hpp
 
+/root/shenlan/18_motion_planning/project/src/trajectory_generator/include/trajectory_generator_waypoint.h
+Eigen/Eigen
+-
+vector
+-
+
 /root/shenlan/18_motion_planning/project/src/trajectory_generator/src/Astar_searcher.cpp
 Astar_searcher.h
 /root/shenlan/18_motion_planning/project/src/trajectory_generator/src/Astar_searcher.h
+
+/root/shenlan/18_motion_planning/project/src/trajectory_generator/src/trajectory_generator_waypoint.cpp
+trajectory_generator_waypoint.h
+/root/shenlan/18_motion_planning/project/src/trajectory_generator/src/trajectory_generator_waypoint.h
+fstream
+-
+iostream
+-
+ros/console.h
+-
+ros/ros.h
+-
+stdio.h
+-
+string
+-
+osqp/osqp.h
+-
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

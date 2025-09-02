@@ -1,0 +1,2 @@
+set(self_msgs_and_srvs_MESSAGE_FILES "/root/shenlan/18_motion_planning/hw3_update/hw_ros/src/self_msgs_and_srvs/msg/input_point.msg;/root/shenlan/18_motion_planning/hw3_update/hw_ros/src/self_msgs_and_srvs/msg/output_point.msg")
+set(self_msgs_and_srvs_SERVICE_FILES "/root/shenlan/18_motion_planning/hw3_update/hw_ros/src/self_msgs_and_srvs/srv/GlbObsRcv.srv;/root/shenlan/18_motion_planning/hw3_update/hw_ros/src/self_msgs_and_srvs/srv/LearningSampler.srv")

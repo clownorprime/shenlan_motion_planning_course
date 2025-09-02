@@ -89,8 +89,8 @@ read_only/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: 
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/OutputData.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/shenlan/18_motion_planning/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from quadrotor_msgs/OutputData.msg"
 	cd /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs && /root/shenlan/18_motion_planning/project/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/OutputData.msg -Iquadrotor_msgs:/root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -98,8 +98,8 @@ read_only/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: 
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/PositionCommand.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/shenlan/18_motion_planning/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from quadrotor_msgs/PositionCommand.msg"
 	cd /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs && /root/shenlan/18_motion_planning/project/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/PositionCommand.msg -Iquadrotor_msgs:/root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -121,9 +121,9 @@ read_only/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: 
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/SO3Command.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/AuxCommand.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/AuxCommand.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/shenlan/18_motion_planning/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from quadrotor_msgs/SO3Command.msg"
 	cd /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs && /root/shenlan/18_motion_planning/project/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/SO3Command.msg -Iquadrotor_msgs:/root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -145,14 +145,14 @@ read_only/Utils/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: 
 
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /root/shenlan/18_motion_planning/project/src/read_only/Utils/quadrotor_msgs/msg/Odometry.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 /root/shenlan/18_motion_planning/project/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/shenlan/18_motion_planning/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from quadrotor_msgs/Odometry.msg"

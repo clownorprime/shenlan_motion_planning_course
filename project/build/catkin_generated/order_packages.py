@@ -2,4 +2,4 @@
 source_root_dir = '/root/shenlan/18_motion_planning/project/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/root/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/root/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/root/shenlan/18_motion_planning/project/devel;/root/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/root/shenlan/18_motion_planning/project/devel;/root/catkin_ws/devel;/opt/ros/noetic' != '' else []

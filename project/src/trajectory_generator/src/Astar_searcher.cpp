@@ -450,6 +450,10 @@ int AstarPathFinder::safeCheck(MatrixXd polyCoeff, VectorXd time) {
    * STEP 3.3:  finish the sareCheck()
    *
    * **/
+  for (int i = 0; i < time.size(); i++)
+  {
+    VectorXd poly_coeff_seg = polyCoeff.row(i);
+  }
 
   return unsafe_segment;
 }
